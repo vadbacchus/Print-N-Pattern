@@ -79,7 +79,7 @@ gulp.task('sass', function() {
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(gcmq())
 	.pipe(autoprefixer(['last 15 versions']))
-	/*.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging*/
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging*/
 	.pipe(gulp.dest('src/css'))
 	.pipe(browsersync.reload( {stream: true} ))
 });
@@ -90,7 +90,7 @@ gulp.task('js', function() {
 		'src/js/common.js', // Always at the end 
 		])
 	.pipe(concat('scripts.min.js'))
-	/*.pipe(uglify()) // Mifify js (opt.)*/
+	.pipe(uglify()) // Mifify js (opt.)*/
 	.pipe(gulp.dest('src/js'))
 	.pipe(browsersync.reload({ stream: true }))
 });

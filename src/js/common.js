@@ -2,8 +2,6 @@
 
 var slideIndex = 1;
 
-
-
 function showSlidesArrows(n) { 
 	var slides = document.querySelectorAll('.slider__item');
 
@@ -134,3 +132,17 @@ for(i=0;i<dotsHotItems.length; i++) {
 }
 
 //end of new-items and hot-items sliders
+
+//start of smooth scrolling script
+
+var back2top = document.querySelector('.back2top__link');
+
+back2top.onclick = function(e) {
+
+	e.preventDefault();
+
+	document.querySelector(this.getAttribute('href')).scrollIntoView({
+		behavior: 'smooth',
+		block: 'start'
+	});
+}

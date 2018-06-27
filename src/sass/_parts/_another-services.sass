@@ -1,15 +1,18 @@
 .services
 	+row-flex()
+
 	justify-content: center
 	text-align: center
 	padding: 120px 0
 .service
 	+col-padding()
 	+size(6)
-	+size-sm(10)
-	+size-xs(12)
+	
 	position: relative
 	border: 1px solid $accent
+
+	+size-sm(10)
+	+size-xs(12)
 
 	&:hover .rays
 		transform: scale(1)
