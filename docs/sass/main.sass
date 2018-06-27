@@ -1,0 +1,70 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "_mixins/_smart-grid"
+
+
+::placeholder
+	color: $grey
+	font-size: 14px
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+	scroll-behavior: smooth
+
+body
+	font-size: 16px
+	min-width: 320px
+	max-width: 1920px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	margin: 0 auto
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	input, textarea
+			border: #666 1px solid
+			outline: none
+
+a
+	text-decoration: none
+	color: $grey
+
+	&:hover
+		color: $grey
+
+ul, li
+	list-style: none
+	margin: 0
+	padding: 0
+
+.wrapper
+	+wrapper()
+
+.wrapper-full
+	+wrapper-full()
+	padding: 0
+
+
+@import "_parts/_header"
+@import "_parts/_categories"
+@import "_parts/_lookbooks-sec"
+@import "_parts/_new-items-sec"
+@import "_parts/_sale-end-season"
+@import "_parts/_hot-items-sec"
+@import "_parts/_another-services"
+@import "_parts/_subscribe-sec"
+@import "_parts/_footer"
+
+
+@import "_animations"
+
+
+
+

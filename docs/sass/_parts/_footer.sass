@@ -1,0 +1,68 @@
+.footer
+	padding: 40px 0 0 0 
+
+.footer-links
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
+.bottomnav
+	+col()
+	+size(5)
+	
+	display: flex
+	justify-content: center
+	align-items: center
+
+	+md(width, 100%)
+
+	&--2
+		+size(5)
+
+		justify-content: flex-end
+	
+		+md(width, 100%)
+		+md(margin, 20px auto)
+		+md(justify-content, center)
+
+
+	&__item
+		margin: 0 25px 0 0
+		font-size: 12px
+		text-align: right
+
+		+md(font-size, 10px)
+
+		&:last-child
+			margin: 0
+
+		+md(margin, 0 10px 0 0)
+
+.back2top
+	+col()
+
+	margin: 0 auto
+	position: relative
+	
+	+md(order, 3)
+
+	&:hover .rays
+		transform: scale(1)
+
+	a
+		text-decoration: none
+	
+	
+	
+.cip-up-big
+	font-size: 16px
+	background: $accent
+	width: 60px
+	height: 60px
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	color: #fff
+
+	

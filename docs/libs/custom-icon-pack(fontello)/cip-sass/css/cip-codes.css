@@ -1,0 +1,17 @@
+
+.cip-megaphone:before { content: '\e800'; } /* '' */
+.cip-globe:before { content: '\e801'; } /* '' */
+.cip-basket:before { content: '\e802'; } /* '' */
+.cip-search:before { content: '\e803'; } /* '' */
+.cip-heart-empty:before { content: '\e804'; } /* '' */
+.cip-down-open:before { content: '\e805'; } /* '' */
+.cip-left-big:before { content: '\e812'; } /* '' */
+.cip-right-big:before { content: '\e813'; } /* '' */
+.cip-up-big:before { content: '\e814'; } /* '' */
+.cip-star-empty:before { content: '\e817'; } /* '' */
+.cip-star:before { content: '\e818'; } /* '' */
+.cip-plus:before { content: '\e81e'; } /* '' */
+.cip-right-open-mini:before { content: '\e826'; } /* '' */
+.cip-money:before { content: '\f0d6'; } /* '' */
+.cip-star-half-alt:before { content: '\f123'; } /* '' */
+.cip-play-circled:before { content: '\f144'; } /* '' */
